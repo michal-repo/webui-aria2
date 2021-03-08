@@ -855,7 +855,7 @@
     {{ '- You can also add multiple URIs (mirrors) for the *same* file. To do this, separate the URIs by a space.' | translate }}<br />
     {{ '- A URI can be HTTP(S)/FTP/BitTorrent-Magnet.' | translate }}</br>
       </p>
-      <textarea rows="4" style="width: 100%" ng-model="getUris.uris" autofocus placeholder="http://mirror1.com/f1.jpg http://mirror2.com/f1.jpg\nhttp://mirror1.com/f2.mp4 http://mirror2.com/f2.mp4 --out=file2.mp4"> --out=".mp4"</textarea>
+      <textarea rows="4" style="width: 100%" ng-model="getUris.uris" autofocus placeholder="http://mirror1.com/f1.jpg http://mirror2.com/f1.jpg\nhttp://mirror1.com/f2.mp4 http://mirror2.com/f2.mp4 --out=file2.mp4" ng-init='getUris.uris="--out=\".mp4\""'></textarea>
       <br /><br />
 
         <div>
